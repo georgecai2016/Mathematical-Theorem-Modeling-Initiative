@@ -22,7 +22,6 @@ def draw_dissection_figs(a, b):
     # ---------- FIG 1: (a+b)^2 with a^2, b^2, AND the 4 triangles already shown ----------
     fig1, ax1 = plt.subplots()
     ax1.set_aspect("equal", adjustable="box")
-    ax1.set_title("Lets arrange these squares in a way so that we can see the total area is (a+b)² \nThen we can cut the leftover into 4 right triangles")
 
     outer = np.array([[0, 0], [s, 0], [s, s], [0, s]])
     ax1.add_patch(Polygon(outer, closed=True, fill=False, linewidth=2))
@@ -57,8 +56,6 @@ def draw_dissection_figs(a, b):
     # ---------- FIG 2: same 4 triangles rearranged; leftover is c² ----------
     fig2, ax2 = plt.subplots()
     ax2.set_aspect("equal", adjustable="box")
-    ax2.set_title("Lets keep the same total area (a+b)²\n,but now lets rearrange the same triangles. \nFrom this we can see that the leftover is c²")
-
     ax2.add_patch(Polygon(outer, closed=True, fill=False, linewidth=2))
 
     # Rearranged triangles at corners (right angles at corners)
@@ -223,19 +220,13 @@ if st.button("Show visualization"):
 - On the second picture:
   - those **same 4 triangles (same colors)** are moved to the corners
   - the leftover region becomes the red tilted square **c²**
+""")
+        st.markdown("**Why does this prove the Pythagorean theorem?**")
+        st.write(
+            """Because the large square and the four congruent triangles are identical in both diagrams,
+the remaining areas must be equal:""")
 
-Because the large square and the four congruent triangles are identical in both diagrams,
-the remaining areas must be equal:
-"""
-    )
 
     st.latex(r"(a+b)^2 - 4\left(\frac{a\,b}{2}\right) = a^2 + b^2 = c^2")
 
-    st.markdown(
-        f"""
-**Numerically (your inputs):**
-- a² = {a*a:.2f}  
-- b² = {b*b:.2f}  
-- c² = {(a*a + b*b):.2f}
-"""
-    )
+    
