@@ -1,2 +1,2 @@
-# Mathematical-Theorem-Modeling-Initiative
+# Mathematical Theorem Modeling Initiative
 An interactive web
