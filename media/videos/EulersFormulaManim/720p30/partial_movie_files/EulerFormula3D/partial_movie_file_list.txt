@@ -1,0 +1,3 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Eng Project/MathematicalFundamentalTheorems/Fourier Transform (ignore Eulers)/Eulers Formula/media/videos/EulersFormulaManim/720p30/partial_movie_files/EulerFormula3D/2174629284_466469838_1672401329.mp4'
+file 'file:C:/Eng Project/MathematicalFundamentalTheorems/Fourier Transform (ignore Eulers)/Eulers Formula/media/videos/EulersFormulaManim/720p30/partial_movie_files/EulerFormula3D/2699500524_824426264_1867319304.mp4'
