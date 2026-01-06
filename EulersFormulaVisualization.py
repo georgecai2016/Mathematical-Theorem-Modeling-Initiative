@@ -10,7 +10,14 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
+from pathlib import Path
 
+video_path = Path("media/videos/EulersFormulaManim/720p30/EulerFormula3D.mp4")
+
+if video_path.exists():
+    st.video(str(video_path))
+else:
+    st.error(f"Missing video at: {video_path.resolve()}")
 
 st.set_page_config(page_title="Euler’s Formula Visualized", layout="wide")
 
