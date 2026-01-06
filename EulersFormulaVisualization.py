@@ -55,11 +55,7 @@ As the point rotates around the unit circle, the animation “projects” the mo
 see how \(\cos(t)\) and \(\sin(t)\) appear as shadows of the same rotating point.
 """
 )
-# show rendered video
-if video_path.exists():
-    st.video(str(video_path))
-else:
-    st.error(f"Missing video at: {video_path.resolve()}")
+
 
 if video_path is None:
     st.info("No Manim video found yet. Render it in your terminal or place the mp4 under the media/ folder.")
