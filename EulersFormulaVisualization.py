@@ -14,10 +14,7 @@ from pathlib import Path
 
 video_path = Path("media/videos/EulersFormulaManim/720p30/EulerFormula3D.mp4")
 
-if video_path.exists():
-    st.video(str(video_path))
-else:
-    st.error(f"Missing video at: {video_path.resolve()}")
+
 
 st.set_page_config(page_title="Euler’s Formula Visualized", layout="wide")
 
@@ -58,8 +55,11 @@ As the point rotates around the unit circle, the animation “projects” the mo
 see how \(\cos(t)\) and \(\sin(t)\) appear as shadows of the same rotating point.
 """
 )
-
-video_path = find_rendered_video()
+# show rendered video
+if video_path.exists():
+    st.video(str(video_path))
+else:
+    st.error(f"Missing video at: {video_path.resolve()}")
 
 if video_path is None:
     st.info("No Manim video found yet. Render it in your terminal or place the mp4 under the media/ folder.")
