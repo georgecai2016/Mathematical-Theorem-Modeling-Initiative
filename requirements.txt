@@ -3,4 +3,3 @@ scipy
 matplotlib
 plotly
 streamlit
-manim==0.19.1
