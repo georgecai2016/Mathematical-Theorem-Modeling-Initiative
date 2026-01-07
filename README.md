@@ -36,7 +36,7 @@ Streamlit interface to combine explanation, visuals, and interaction
 
 
 Each component builds toward understanding Euler’s formula as a statement about rotation, not just algebra.
-# Development Timeline (11 Weeks)
+# Development Timeline (11 Weeks around july 24-sept 10th)
 Weeks 1–2: Studied Euler’s formula, complex numbers, and unit circle intuition
 
 
@@ -46,13 +46,10 @@ Week 3: Built early visualizations without Manim; motion was difficult to interp
 Weeks 4–5: Transitioned to Manim and learned animation mechanics
 
 
-Weeks 5–7: Experimented extensively and produced the first successful Manim render
+Weeks 5–7: Experimented extensively and produced the first successful Manim render and created a full draft integrating Streamlit, plots, and explanations
 
 
-Weeks 7–9: Created a full draft integrating Streamlit, plots, and explanations
-
-
-Weeks 9–11: Finalized visuals, fixed errors, refined explanations, and deployed the app
+Weeks 7–8: Finalized visuals, fixed errors, refined explanations, and deployed the app
 
 
 # Summary
